@@ -1,6 +1,6 @@
 .csrol{
   max-width: 100%;
-  height: 60vh;
+  height: 125px;
 }
 
 .cont-width{
@@ -126,14 +126,9 @@ a{
   color: black;
   box-shadow: 1px 2px 7px #d7d7d7;
 }
+@media (max-width: 767.98px) { 
+  h2{
+    font-size: 0.8rem;
+  }
 
-
-/*
-.process-banner{
-  display: inline-flexbox;
-  
-}
-
-.process-banner-cantainer{
-  margin-bottom: 1.5rem;
-} */
+ }
