@@ -143,6 +143,9 @@ a{
   .card-title, .card-text{  
   font-size: 1.1rem;  
   }
+  .card-header, .card-body{
+    font-size: 1rem;
+  }
 
   h2{
     font-size: 1.5rem;
@@ -182,6 +185,12 @@ a{
   }
   .card-title, .card-text{  
   font-size: 1rem;  
+  }
+  .card-header, .card-body{
+    font-size: 0.9rem;
+  }
+  .card-body{
+    transform: translate(0px,-5px);
   }
   h2{
     font-size: 1.3rem;
