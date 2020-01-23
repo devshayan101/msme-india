@@ -37,7 +37,7 @@
 
   .label {
    margin-bottom: 10px;
-   padding: 0.7rem;
+   padding-bottom: 0.7rem;
    font-size: 1.1rem;
    font-weight: 600;
   }
@@ -78,14 +78,13 @@
 
   @media (max-width: 767.98px){
     .input {
-   border-radius: 7px;
+   border-radius: 4px;
    margin-bottom: 6px;
    height: 2.5rem;
   }
 
   .label {
-   margin-bottom: 6px;
-   padding: 0.7rem;
+   margin-bottom: 6px;   
    font-size: 1rem;
    font-weight: 400;
   }
@@ -106,14 +105,14 @@
 
    @media (max-width: 575.98px){
     .input {
-   border-radius: 7px;
+   border-radius: 2px;
    margin-bottom: 4px;
    height: 2.3rem;
   }
 
   .label {
    margin-bottom: 4px;
-   padding: 0.7rem;
+   
    
   }
 
