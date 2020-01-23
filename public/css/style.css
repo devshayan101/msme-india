@@ -158,7 +158,7 @@ a{
    
   .csrol{
   max-width: 100%;
-  height: 240px;
+  height: 150px;
   }
   .btn-form {
     width: 50%;
@@ -166,4 +166,26 @@ a{
   .li{
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
   }
+  .hide-570{
+    display: none;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+  h4{
+    font-size:1rem;
+    font-weight: 400;
+  }
+  h5{
+    font-size: 0.9rem;
+  }
+  h6{
+    font-size:0.6rem;
+    font-weight: 400;
+  }
+
   }
