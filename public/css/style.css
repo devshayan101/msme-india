@@ -14,10 +14,25 @@
 }
 
 .head{
-  background-color: #dae0f2;
+  background-color: #5f464b !important;
   padding:10px ;
   text-align: center;
   line-height: 2.8rem;
+  color: #f7f7f7;
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 5px 5px 27px 1px #888888;
+}
+.instructions{
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: left;
+  line-height: 10px !important;/*  not woking */
+}
+
+.warper{
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5rem;
 }
 .head01{
   transform: translateY(25%);
@@ -28,10 +43,9 @@
   width: 2.3rem;
 }
 .card{
-  background-color:#006ba6;
-  /* padding: 25px; */
-  /* display: inline-block; */
+  background-color:#53b3cb;  
   margin-left: 0;
+  border-radius: 3rem;
  
 }
 .card-title, .card-text{
@@ -52,8 +66,9 @@ i{
 }
 
 .process-bucket{
-  background-color: #21a7f03d;
+  background-color: #80ffec4f;
   padding-bottom: 3rem;
+  padding-top:2rem;
   margin-bottom: 2rem;
 }
 .coll{
@@ -76,7 +91,8 @@ i{
 .foot-hero{
   text-align: center;
   padding: 2rem;
-  background-color: #dae0f2;
+  background-color: #53b3cbbb !important;
+  color: #fff !important;
 }
 .foot-hero-img, .foot-hero-text{
   display: inline-block;
