@@ -1,12 +1,13 @@
  
  .container {
    max-width: 1000px;
-   background-color: #eafffa;
+   background-color: #9bebd3;
    text-align: center;
    margin-top: 1rem;
    margin-bottom: 1rem;
-   box-shadow: 5px 5px 27px 1px #888888;
+   box-shadow: 5px 5px 27px 1px silver;
    border-radius: 3px;
+   color: #000 !important;
   }
 
   .header {
