@@ -9,7 +9,8 @@
 }
 
 .mar{
- margin-left: 0.8rem;
+ margin-left: 0.5rem;
+ margin-right: 0.5rem;
  padding: 0.5rem;
 }
 .navbar-brand{
@@ -40,6 +41,7 @@
 .instructions{
   padding:1rem;
   text-align: left;
+  
   line-height: 10px !important;/*  not woking */
 }
 
@@ -81,13 +83,22 @@ i{
 }
 
 .process-bucket{
-  background-color: #ffa630;
+  background-color: orange;
   padding-bottom: 3rem;
   padding-top:2rem;
   margin-bottom: 2rem;
 }
 .coll{
-  background-color:#fafafa;
+  background-color:#2e5077;
+   color: #fff;
+}
+.left{
+  text-align: left !important;
+  text-decoration: none;
+  color: #fff;
+}
+.left:hover{
+  color: orange;
 }
 .benefits-bucket, .faq-benefits{
   margin-top: 2rem;
