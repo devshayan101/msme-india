@@ -18,9 +18,14 @@
 .nav-link{
   color: #fff !important;
 }
+.btn-dark{
+  background-color: #ffa630 !important;
+  border: 1px solid #ffa630 !important;
+  color: #000 !important;
+}
 .btn-dark:hover{
-  box-shadow: 2px 2px 10px 1px #f15946;
-  text-shadow: 1px 1px #7e7e7e;
+  box-shadow: 2px 2px 10px 1px #2e5077;
+  text-shadow: 0px 0px #2e5077;
 }
 
 .head{
@@ -33,7 +38,7 @@
   box-shadow: 5px 5px 27px 1px #888888;
 }
 .instructions{
-  padding: 2rem 2rem 2rem 2rem;
+  padding:1rem;
   text-align: left;
   line-height: 10px !important;/*  not woking */
 }
@@ -53,13 +58,13 @@
   width: 2.3rem;
 }
 .card{
-  background-color:#15d8e5;  
+  background-color:#2e5077;  
   margin-left: 0;
   border-radius: 3rem;
  
 }
 .card-title, .card-text{
-  color: #000;
+  color: #fff;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -76,7 +81,7 @@ i{
 }
 
 .process-bucket{
-  background-color: #80ffec4f;
+  background-color: #ffa630;
   padding-bottom: 3rem;
   padding-top:2rem;
   margin-bottom: 2rem;
@@ -187,7 +192,7 @@ a{
     font-weight: 400;
   }
   h5{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   h6{
     font-size:0.8rem;
@@ -231,11 +236,9 @@ a{
     font-size:1rem;
     font-weight: 400;
   }
-  h5{
-    font-size: 0.9rem;
-  }
+  
   h6{
-    font-size:0.6rem;
+    font-size:0.8rem;
     font-weight: 400;
   }
 
