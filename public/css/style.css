@@ -11,9 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
-.head-img{
-  
-}
+
 .vertical{
   transform: translateY(30%);
 }
@@ -28,7 +26,7 @@
 .nav-link{
   color: #fff !important;
 }
-.btn-dark{
+.btn-light{
   background-color: #ffa630 !important;
   border: 1px solid #ffa630 !important;
   color: #000 !important;
@@ -205,6 +203,11 @@ a{
   }
   .card-header, .card-body{
     font-size: 1rem;
+  }
+  .head-wraper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   }
 
   h2{
