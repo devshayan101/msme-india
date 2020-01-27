@@ -13,7 +13,7 @@
 }
 
 .vertical{
-  transform: translateY(30%);
+  
 }
 .mar{
  margin-left: 0.5rem;
@@ -27,8 +27,8 @@
   color: #fff !important;
 }
 .btn-light{
-  background-color: #ffa630 !important;
-  border: 1px solid #ffa630 !important;
+  background-color: orange !important;
+  border: 1px solid orange !important;
   color: #000 !important;
 }
 .btn-light:hover{
@@ -170,7 +170,7 @@ a{
 .li{
   display: inline-block;
   text-align: center;
-  padding: 0.7rem 1rem 0.1rem 1rem;
+  padding: 0.7rem 1rem 0.2rem 1rem;
   margin-bottom: 0.1rem;
   background-color: #eeeeee;
   border: 1px solid silver;
@@ -242,7 +242,7 @@ a{
   }
   
   .li{
-    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    padding: 0.5rem 0.8rem 0.2rem 0.8rem;
   }
   .hide-570{
     display: none;
