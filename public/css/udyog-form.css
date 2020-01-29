@@ -81,8 +81,7 @@
   }
 
   .submit{
-   background-color: green;
-   color: white;
+    text-align: left;
   }
 
   #formType{
@@ -133,7 +132,7 @@
 
    @media (max-width: 575.98px){
 
-    .wraper{
+  .wraper{
     display: grid;
     grid-template-columns: 1fr ;
     font-size: small !important;
@@ -152,10 +151,12 @@
    
    
   }
-
+  .submit{
+    text-align: center;
+  }
   .btn-form {
    
-   width: 50vw;
+   width: 80vw ;
    height: 2.5rem;
    color: white;
    font-size: small;
