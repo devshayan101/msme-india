@@ -117,8 +117,7 @@
   }
 
   .btn-form {
-   
-   width: 50vw;
+   width: 10rem;
    height: 2.5rem;
    color: white;
    margin: 0 0 2rem 1rem;
@@ -151,12 +150,10 @@
    
    
   }
-  .submit{
-    text-align: center;
-  }
+  
   .btn-form {
    
-   width: 80vw ;
+   
    height: 2.5rem;
    color: white;
    font-size: small;
