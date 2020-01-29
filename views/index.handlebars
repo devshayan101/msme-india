@@ -26,27 +26,27 @@
         <div class="form-item">
           <label for="aadhaarCardName" class="label">1. Applicant Name / आवेदक का नाम <div class="required"> (Required)
             </div></label>
-          <input type="text" class="input" name="aadhaarCardName" placeholder="Your Name" autocomplete="off" required>
+          <input type="text" class="input" name="aadhaarCardName" placeholder="" autocomplete="off" required>
         </div>
 
         <div class="form-item">
-          <label for="aadhaarCardNo" class="label">2. Aadhaar Number / आधार नंबर</label>
-          <input type="text" class="input" name="aadhaarCardNo" placeholder="Aadhaar No" autocomplete="off">
+          <label for="phone" class="label">2. Phone Number/ मोबाइल नंबर <div class="required"> (Required) </div></label>
+          <input type="text" class="input" name="phone" placeholder="" id="" required autocomplete="off">
         </div>
 
         <div class="form-item">
-          <label for="panNumber" class="label">3. Pan Card Number/ पैन नंबर</label>
-          <input type="text" class="input" name="panNumber" placeholder="Pan Number" autocomplete="off">
+          <label for="email" class="label">3. Email ID / ईमेल आईडी <div class="required"> (Required) </div></label>
+          <input type="email" class="input" name="email" placeholder="" required autocomplete="off">
         </div>
 
         <div class="form-item">
-          <label for="email" class="label">4. Email ID / ईमेल आईडी <div class="required"> (Required) </div></label>
-          <input type="email" class="input" name="email" placeholder="Email-Id" required autocomplete="off">
+          <label for="aadhaarCardNo" class="label">4. Aadhaar Number / आधार नंबर</label>
+          <input type="text" class="input" name="aadhaarCardNo" placeholder="" autocomplete="off">
         </div>
 
         <div class="form-item">
-          <label for="phone" class="label">5. Phone Number/ मोबाइल नंबर <div class="required"> (Required) </div></label>
-          <input type="text" class="input" name="phone" placeholder="Phone Number" id="" required autocomplete="off">
+          <label for="panNumber" class="label">5. Pan Card Number/ पैन नंबर</label>
+          <input type="text" class="input" name="panNumber" placeholder="" autocomplete="off">
         </div>
 
         <div class="form-item">
@@ -158,9 +158,9 @@
       </div>
 
       {{!-- <input type="reset" value="Clear Form" class="btn btn-primary btn-form" style="display:none"> --}}
-      <center>
-        <input type="submit" value="Submit" class="btn btn-dark btn-form" id="submit">
-      </center>
+      <div class="" style="text-align: left !important;">
+        <input type="submit" value="SUBMIT" class="btn btn-dark btn-form " id="submit">
+      </div>
 
     </form>
   </div>
@@ -174,11 +174,19 @@
           Aadhaar Card.
           "आधार कार्ड में उल्लिखित आवेदक का नाम भरें।"<br><br>
         </h5>
-        <h5><b>2. Aadhaar Number :</b> Fill 12 digit Aadhaar number issued to the applicant in the appropriate field.
+
+        <h5><b>2. Email ID :</b> Fill the correct Mail ID of Applicant
+          "यहां अपनी सही ईमेल आईडी का उल्लेख करें।"<br><br>
+        </h5>
+        <h5><b>3. Phone No :</b> Fill the correct Mobile Number of Applicant
+          "आवेदक का सही मोबाइल नंबर यहां लिखें। "<br><br>
+        </h5>
+
+        <h5><b>4. Aadhaar Number :</b> Fill 12 digit Aadhaar number issued to the applicant in the appropriate field.
           "यहां 12 अंकों का आधार नंबर भरें।"<br><br>
         </h5>
 
-        <h5><b>3. PAN:</b> Fill 10 Digit PAN Number in case of Limited Liability Partnership / Co-operative / Private
+        <h5><b>5. PAN:</b> Fill 10 Digit PAN Number in case of Limited Liability Partnership / Co-operative / Private
           Limited /
           Public
           Limited. PAN Number is optional in case of Proprietorship Firm / Hindu Undivided Family / Partnership Firm /
@@ -188,12 +196,7 @@
           "यहां बिजनेस पैन का उल्लेख करें। प्रोप्राइटरशिप के मामले में प्रोप्राइटर का पैन उल्लेख करें।"<br><br>
         </h5>
       </div>
-      <h5><b>4. Email ID :</b> Fill the correct Mail ID of Applicant
-        "यहां अपनी सही ईमेल आईडी का उल्लेख करें।"<br><br>
-      </h5>
-      <h5><b>5. Phone No :</b> Fill the correct Mobile Number of Applicant
-        "आवेदक का सही मोबाइल नंबर यहां लिखें। "<br><br>
-      </h5>
+
 
       <h5><b>6. Social Category :</b> Select the Social Category of applicant from the given options.
         "आवेदक की सामाजिक श्रेणी का चयन करें।"<br><br>

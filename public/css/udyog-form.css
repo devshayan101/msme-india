@@ -9,6 +9,11 @@
    border-radius: 5px;
    color: #000 !important;
   }
+  .wraper{
+    margin: auto;
+    display: grid;
+    grid-template-columns:1.5fr 1fr ;
+  }
 
   .header {
    background-color: #006ba6;
@@ -44,13 +49,16 @@
    font-size: 1.1rem;
    font-weight: 600;
   }
-
+  input::placeholder{
+    display: hidden;
+  }
   .btn-form {
    
-   width: 20rem;
+   width: 15rem;
    height: 2.5rem;
- 
-   margin: 2rem;
+   font-weight: 500;
+   font-size: medium;
+   margin: 2rem 0 2rem 1rem;
   }
 
   .upload {
@@ -97,7 +105,7 @@
    width: 50vw;
    height: 2.5rem;
    color: white;
-   margin: 2rem;
+   margin: 2rem 0 2rem 1rem;
   }
 
   .payment{
@@ -107,6 +115,11 @@
 
 
    @media (max-width: 575.98px){
+
+    .wraper{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
     .input {
    border-radius: 2px;
    margin-bottom: 4px;
@@ -124,7 +137,8 @@
    width: 50vw;
    height: 2.5rem;
    color: white;
-   margin: 2rem;
+   font-size: small;
+   margin: 2rem 0 2rem 1rem;
   }
 
   
