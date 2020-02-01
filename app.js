@@ -50,7 +50,7 @@ app.get('/databank', (req, res) => {
 });
 
 app.get('/instant', (req, res) => {
-  res.render('index', { formHead: 'Instant MSME Registration', time: '1-2 Days', price: '2100', payLink: 'https://imjo.in/MxnV88' });
+  res.render('index', { formHead: 'Instant MSME Registration', time: '1-2 Days', required: '(Required)', required01: 'Required', price: '2100', payLink: 'https://imjo.in/MxnV88' });
 });
 
 app.get('/gst', (req, res) => {
