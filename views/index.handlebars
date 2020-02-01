@@ -111,10 +111,11 @@
         </div>
 
         <div class="form-item">
-          <label for="nature" class="label" {{required01}}>12. Main Business Activity of Enterprise / इकाई का प्रमुख
-            गतिविधि</label>
-          <textarea name="nature" placeholder="Example- Wood, Bricks, Plactics, etc." cols="30" rows="4"
-            class="input"></textarea>
+          <label for="nature" class="label">12. Main Business Activity of Enterprise / इकाई का प्रमुख
+            गतिविधि <div class="required"> {{required}}
+            </div></label>
+          <textarea name="nature" placeholder="Example- Wood, Bricks, Plactics, etc." cols="30" rows="4" class="input"
+            {{required01}}></textarea>
         </div>
 
         <div class="form-item">
@@ -148,22 +149,23 @@
           <label for="aadhaarFile01" class="label">17. Upload your Aadhaar Card [FRONT] / आधार कार्ड (सामने): <div
               class="required"> {{required}}
             </div></label>
-          <input type="file" name="aadhaarFile01" class="input" accept=".jpg, .pdf">
+          <input type="file" name="aadhaarFile01" class="input" accept=".jpg, .pdf" {{required01}}>
         </div>
 
         <div class="form-item">
           <label for="aadhaarFile02" class="label">18. Upload your Aadhaar Card [BACK] / आधार कार्ड (पीछे):<div
-              class="required"> {{required}}</label>
+              class="required"> {{required}}</div></label>
           <input type="file" name="aadhaarFile02" class="input" accept=".jpg, .pdf" {{required01}}>
         </div>
 
 
         <div class="form-item">
-          <label for="panFile" class="label">19. Upload your Pancard / पैन कार्ड (सामने): </div></label>
-        <input type="file" id="pan-File" name="panFile" class="input" accept=".jpg, .pdf" {{required01}}>
-      </div>
+          <label for="panFile" class="label">19. Upload your Pancard / पैन कार्ड (सामने): <div class="required">
+              {{required}}</div></label>
+          <input type="file" id="pan-File" name="panFile" class="input" accept=".jpg, .pdf" {{required01}}>
+        </div>
 
-      {{!-- <div class="form-item" style="display: none;">
+        {{!-- <div class="form-item" style="display: none;">
           <label for="panFile" class="label">Please pay Rs. {{price}} for registration:</label>
           <center>
             <a href="https://imjo.in/e8DEfr">
@@ -176,99 +178,99 @@
             </a>
           </center>
         </div> --}}
+      </div>
+
+      {{!-- <input type="reset" value="Clear Form" class="btn btn-primary btn-form" style="display:none"> --}}
+      <div class="submit">
+        <input type="submit" value="SUBMIT" class="btn btn-dark btn-form " id="submit">
+      </div>
+
+    </form>
   </div>
+  {{!-- Form Ends --}}
+  {{!-- Instructions Starts --}}
+  <div class="container" style="background-color: #2e5077; color:#fff !important;">
+    <div class="instructions">
+      <div class="line">
+        <h4 class="head" style="box-shadow: 5px 5px 27px 1px #1c334d;">Instructions</h4>
+        <h5 style="padding-top: 0.7rem;"><b>1. Name of Applicant :</b> Fill name of Applicant as mentioned on the
+          Aadhaar Card.
+          "आधार कार्ड में उल्लिखित आवेदक का नाम भरें।"<br><br>
+        </h5>
 
-  {{!-- <input type="reset" value="Clear Form" class="btn btn-primary btn-form" style="display:none"> --}}
-  <div class="submit">
-    <input type="submit" value="SUBMIT" class="btn btn-dark btn-form " id="submit">
-  </div>
+        <h5><b>2. Email ID :</b> Fill the correct Mail ID of Applicant
+          "यहां अपनी सही ईमेल आईडी का उल्लेख करें।"<br><br>
+        </h5>
+        <h5><b>3. Phone No :</b> Fill the correct Mobile Number of Applicant
+          "आवेदक का सही मोबाइल नंबर यहां लिखें। "<br><br>
+        </h5>
 
-  </form>
-</div>
-{{!-- Form Ends --}}
-{{!-- Instructions Starts --}}
-<div class="container" style="background-color: #2e5077; color:#fff !important;">
-  <div class="instructions">
-    <div class="line">
-      <h4 class="head" style="box-shadow: 5px 5px 27px 1px #1c334d;">Instructions</h4>
-      <h5 style="padding-top: 0.7rem;"><b>1. Name of Applicant :</b> Fill name of Applicant as mentioned on the
-        Aadhaar Card.
-        "आधार कार्ड में उल्लिखित आवेदक का नाम भरें।"<br><br>
+        <h5><b>4. Aadhaar Number :</b> Fill 12 digit Aadhaar number issued to the applicant in the appropriate field.
+          "यहां 12 अंकों का आधार नंबर भरें।"<br><br>
+        </h5>
+
+        <h5><b>5. PAN:</b> Fill 10 Digit PAN Number in case of Limited Liability Partnership / Co-operative / Private
+          Limited /
+          Public
+          Limited. PAN Number is optional in case of Proprietorship Firm / Hindu Undivided Family / Partnership Firm /
+          Self
+          Help
+          Group
+          "यहां बिजनेस पैन का उल्लेख करें। प्रोप्राइटरशिप के मामले में प्रोप्राइटर का पैन उल्लेख करें।"<br><br>
+        </h5>
+      </div>
+
+
+      <h5><b>6. Social Category :</b> Select the Social Category of applicant from the given options.
+        "आवेदक की सामाजिक श्रेणी का चयन करें।"<br><br>
+      </h5>
+      <h5><b>7. Gender :</b> Select the gender from provided option
+        "आवेदक का लिंग चुनें।"
+        <br>
+      </h5>
+      <h5><b>8. Name of Enterprise / Business :</b> Fill the name of Business / Enterprise which will get printed on
+        MSME
+        Certificate.
+        "यहां अपने व्यवसाय के नाम का उल्लेख करें। यह नाम MSME प्रमाणपत्र पर मुद्रित किया जाएगा।"<br><br>
+      </h5>
+      <h5><b>9. Type of Organization/ Business type: :</b> Select the type of organization from the given options which
+        will get
+        printed on MSME
+        Certificate.
+        "दिए गए विकल्पों में से संगठन के प्रकार का चयन करें।"<br><br>
+      </h5>
+      <h5><b>10. Buisness Address :</b> Please provide office address, if address other than plant location.
+        "दिए गए क्षेत्रों में ठीक से आधिकारिक पता लिखे |"<br><br>
+      </h5>
+      <h5><b>11. Date of starting :</b> Fill the date of Commencement of Business which will get printed on MSME
+        Certificate.
+        "व्यवसाय शुरू करने की तारीख का उल्लेख यहां करें।"<br><br>
+      </h5>
+      <h5><b>12. Nature of buisness:</b>Fill the sector in which you deal. Example- Wood, wool, Plastic product,
+        etc.<br><br>
+      </h5>
+      <h5><b>13. Number of employees:</b>Fill total number of people been employed.
+        "आपके संगठन में कार्यरत कर्मचारियों की संख्या का उल्लेख करें।"<br><br>
+      </h5>
+      <h5><b> 14. Your Investment: </b>Fill the total investment made in Plant, Machinery, and Equipment etc.
+        to start your business.
+        "अपने व्यवसाय में किए गए निवेश की कुल राशि भरें।"<br><br>
+      </h5>
+      <h5><b>15. Bank Account Number :</b> Fill the Applicant’s bank account number.
+        "यहां अपने बैंक खाता नंबर का उल्लेख करें।"<br><br>
+      </h5>
+      <h5><b>16. Bank IFS Code :</b> Fill the Applicant Bank IFS Code. The IFS code is printed on the Cheque Books.
+        "अपने बैंक IFSC कोड को यहां लिखें।"<br><br>
       </h5>
 
-      <h5><b>2. Email ID :</b> Fill the correct Mail ID of Applicant
-        "यहां अपनी सही ईमेल आईडी का उल्लेख करें।"<br><br>
-      </h5>
-      <h5><b>3. Phone No :</b> Fill the correct Mobile Number of Applicant
-        "आवेदक का सही मोबाइल नंबर यहां लिखें। "<br><br>
-      </h5>
-
-      <h5><b>4. Aadhaar Number :</b> Fill 12 digit Aadhaar number issued to the applicant in the appropriate field.
-        "यहां 12 अंकों का आधार नंबर भरें।"<br><br>
-      </h5>
-
-      <h5><b>5. PAN:</b> Fill 10 Digit PAN Number in case of Limited Liability Partnership / Co-operative / Private
-        Limited /
-        Public
-        Limited. PAN Number is optional in case of Proprietorship Firm / Hindu Undivided Family / Partnership Firm /
-        Self
-        Help
-        Group
-        "यहां बिजनेस पैन का उल्लेख करें। प्रोप्राइटरशिप के मामले में प्रोप्राइटर का पैन उल्लेख करें।"<br><br>
-      </h5>
-    </div>
-
-
-    <h5><b>6. Social Category :</b> Select the Social Category of applicant from the given options.
-      "आवेदक की सामाजिक श्रेणी का चयन करें।"<br><br>
-    </h5>
-    <h5><b>7. Gender :</b> Select the gender from provided option
-      "आवेदक का लिंग चुनें।"
-      <br>
-    </h5>
-    <h5><b>8. Name of Enterprise / Business :</b> Fill the name of Business / Enterprise which will get printed on
-      MSME
-      Certificate.
-      "यहां अपने व्यवसाय के नाम का उल्लेख करें। यह नाम MSME प्रमाणपत्र पर मुद्रित किया जाएगा।"<br><br>
-    </h5>
-    <h5><b>9. Type of Organization/ Business type: :</b> Select the type of organization from the given options which
-      will get
-      printed on MSME
-      Certificate.
-      "दिए गए विकल्पों में से संगठन के प्रकार का चयन करें।"<br><br>
-    </h5>
-    <h5><b>10. Buisness Address :</b> Please provide office address, if address other than plant location.
-      "दिए गए क्षेत्रों में ठीक से आधिकारिक पता लिखे |"<br><br>
-    </h5>
-    <h5><b>11. Date of starting :</b> Fill the date of Commencement of Business which will get printed on MSME
-      Certificate.
-      "व्यवसाय शुरू करने की तारीख का उल्लेख यहां करें।"<br><br>
-    </h5>
-    <h5><b>12. Nature of buisness:</b>Fill the sector in which you deal. Example- Wood, wool, Plastic product,
-      etc.<br><br>
-    </h5>
-    <h5><b>13. Number of employees:</b>Fill total number of people been employed.
-      "आपके संगठन में कार्यरत कर्मचारियों की संख्या का उल्लेख करें।"<br><br>
-    </h5>
-    <h5><b> 14. Your Investment: </b>Fill the total investment made in Plant, Machinery, and Equipment etc.
-      to start your business.
-      "अपने व्यवसाय में किए गए निवेश की कुल राशि भरें।"<br><br>
-    </h5>
-    <h5><b>15. Bank Account Number :</b> Fill the Applicant’s bank account number.
-      "यहां अपने बैंक खाता नंबर का उल्लेख करें।"<br><br>
-    </h5>
-    <h5><b>16. Bank IFS Code :</b> Fill the Applicant Bank IFS Code. The IFS code is printed on the Cheque Books.
-      "अपने बैंक IFSC कोड को यहां लिखें।"<br><br>
-    </h5>
-
-    <h5><b>17.Upload your Aadhaar Card [FRONT] :</b> Attach scan copy of your Aadhaar Card. FRONT side. (jpg,pdf file
-      < 500KB) "अपने आधार कार्ड की स्कैन कॉपी Attach करें। <br><br>
+      <h5><b>17.Upload your Aadhaar Card [FRONT] :</b> Attach scan copy of your Aadhaar Card. FRONT side. (jpg,pdf file
+        < 500KB) "अपने आधार कार्ड की स्कैन कॉपी Attach करें। <br><br>
   </h5>
   <h5><b>18. Upload your Aadhaar Card [BACK]:</b>Attach scan copy of your Aadhaar Card. BACK side. (jpg,pdf file < 500KB) "
-        अपने आधार कार्ड की स्कैन कॉपी Attach करें। <br><br>
-    </h5>
-    <h5><b>19. Upload your Pan card:</b>Attach scan copy of your PAN Card.
-      (jpg,pdf file < 500KB) "अपने पैन कार्ड की स्कैन कॉपी Attach करें।</h5>
+          अपने आधार कार्ड की स्कैन कॉपी Attach करें। <br><br>
+      </h5>
+      <h5><b>19. Upload your Pan card:</b>Attach scan copy of your PAN Card.
+        (jpg,pdf file < 500KB) "अपने पैन कार्ड की स्कैन कॉपी Attach करें।</h5>
   </div>
 </div>
 </div>
@@ -278,439 +280,446 @@
 
 <div class=" process-bucket">
 
-        <center>
-          {{!-- <h4 class="process-head">{{formHead}} Fast and Easy..!!</h4> <br> --}}
-          <h4 class="process-head head">Procedure To Obtain MSME / SSI Registration Certificate Online
-          </h4> <br>
-        </center>
-        <div class="card-deck">
-          <div class="card">
+          <center>
+            {{!-- <h4 class="process-head">{{formHead}} Fast and Easy..!!</h4> <br> --}}
+            <h4 class="process-head head">Procedure To Obtain MSME / SSI Registration Certificate Online
+            </h4> <br>
+          </center>
+          <div class="card-deck">
+            <div class="card">
 
 
-            <div class="card-body">
-              <h5 class="card-title">
-                <center><i class="fas fa-id-card"></i> </center>
-              </h5>
-              <p class="card-text">Fill the above MSME application form</p>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <center><i class="fas fa-id-card"></i> </center>
+                </h5>
+                <p class="card-text">Fill the above MSME application form</p>
 
+              </div>
+              {{!-- <center><i class="fas fa-arrow-alt-circle-right new"></i></center> --}}
             </div>
-            {{!-- <center><i class="fas fa-arrow-alt-circle-right new"></i></center> --}}
-          </div>
-          <div class="card">
+            <div class="card">
 
-            <div class="card-body">
-              <h5 class="card-title">
-                <center><i class="far fa-credit-card"></i></center>
-              </h5>
-              <p class="card-text">Pay registration fees to confirm application</p>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <center><i class="far fa-credit-card"></i></center>
+                </h5>
+                <p class="card-text">Pay registration fees to confirm application</p>
 
+              </div>
+              {{!-- <center><i class="fas fa-arrow-alt-circle-right new"></i></center> --}}
             </div>
-            {{!-- <center><i class="fas fa-arrow-alt-circle-right new"></i></center> --}}
-          </div>
-          <div class="card">
+            <div class="card">
 
-            <div class="card-body">
-              <h5 class="card-title">
-                <center><i class="fas fa-users"></i>
-              </h5>
-              </center>
-              <p class="card-text">Our executive will process your application</p>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <center><i class="fas fa-users"></i>
+                </h5>
+                </center>
+                <p class="card-text">Our executive will process your application</p>
 
+              </div>
+              {{!-- <center><i class="fas fa-arrow-alt-circle-right new"></i></center> --}}
             </div>
-            {{!-- <center><i class="fas fa-arrow-alt-circle-right new"></i></center> --}}
-          </div>
-          <div class="card">
+            <div class="card">
 
-            <div class="card-body">
-              <h5 class="card-title">
-                <center><i class="fas fa-envelope"></i></center>
-              </h5>
-              <p class="card-text">Certificate will be sent to registered e-mail id</p>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <center><i class="fas fa-envelope"></i></center>
+                </h5>
+                <p class="card-text">Certificate will be sent to registered e-mail id</p>
 
-            </div>
-          </div>
-        </div>
-
-  </div>
-
-  {{!-- <!-- Process banner end --> --}}
-
-  {{!-- <!-- Benefits/FaQ's section --Start-- -->
-
-<!-- Benefits Section --Start-- --> --}}
-  <div class="wraper">
-    <div class="benefits-bucket">
-
-      <center>
-        <h4 class="space head">Here are the Benefits of Getting UDYOG AAdhar MSME Certificate</h4>
-      </center>
-      <div class="accordion" id="accordionExample">
-        <div class="coll">
-          <div class="card-header" id="headingOne">
-            <h4 class="mb-0">
-              <button class="btn btn-link left" type="button" data-toggle="collapse" data-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                Collateral Free loans from banks.
-              </button>
-            </h4>
-          </div>
-
-          <div id="collapseOne" class="collapse show collapse-faq" aria-labelledby="headingOne"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              The Credit Guarantee Fund Scheme for Micro and Small Enterprises (CGS) was launched by the Government of
-              India
-              to make
-              available collateral-free credit to the micro and small enterprise sector. Both the existing and the new
-              enterprises are
-              eligible to be covered under the scheme. The Ministry of Micro, Small and Medium Enterprises, Government
-              of
-              India and
-              Small Industries Development Bank of India (SIDBI), established a Trust named Credit Guarantee Fund
-              Trust
-              for
-              Micro and
-              Small Enterprises (CGTMSE) to implement the Credit Guarantee Fund Scheme for Micro and Small Enterprises
+              </div>
             </div>
           </div>
-        </div>
-        <div class="coll">
-          <div class="card-header" id="headingTwo">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Reduction in rate of Interest from banks
-              </button>
-            </h4>
-          </div>
-          <div id="collapseTwo" class="collapse collapse-faq" aria-labelledby="headingTwo"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              The rate of Interest for enterprise that has MSME registration are lower as compare to other
-              enterprises.
-              Certain
-              targets are set for banks’ lending to the Micro and Small Enterprises. The banks’ have to achieve a 20%
-              growth
-              in credit
-              to micro and small enterprises and 10% annual growth in the number of micro enterprises accounts and 60%
-              of
-              total
-              lending to Micro and Small Enterprises sector. The banks have to follow the following:
-
-              1. 40% of the total advances must go to micro and small enterprises involved in manufacturing having
-              investment in plant
-              and machinery up to Rs.10 lakh and for service enterprises having investment in equipment up to Rs.4
-              lakh.
-
-              2. 20% of the total advance to micro and small enterprises should go to manufacturing enterprises that
-              have
-              above Rs.10
-              lakh till Rs.25 lakh investment in the plant and machinery and for service enterprises that have
-              investments
-              in
-              equipment above Rs.4
-              3. To simplify, 60% of the advances must go to micro enterprises.
-            </div>
-          </div>
-        </div>
-        <div class="coll">
-          <div class="card-header" id="headingThree">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Reservation policies to manufacturing / production sector:
-              </button>
-            </h4>
-          </div>
-          <div id="collapseThree" class="collapse collapse-faq" aria-labelledby="headingThree"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              Reservation of items for exclusive manufacture in SSI sector statutorily provided for in the Industries
-              (Development and
-              Regulation) Act, 1951, has been one of the important policy measures for promoting this sector.
-
-              The Reservation Policy has two objectives
-
-              Ensure increased production of consumer goods in the small scale sector
-              Expand employment opportunities through setting up of small scale industries
-            </div>
-          </div>
-        </div>
-
-
-        <div class="coll">
-          <div class="card-header" id="headingFour">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Very easy to get Licenses, approvals and registrations
-              </button>
-            </h4>
-          </div>
-          <div id="collapseFour" class="collapse collapse-faq" aria-labelledby="headingFour"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              It has made very easy for enterprises that are having MSME Certificate to obtain Licenses, approvals and
-              registrations
-              on any field for their business from the respective authorities as they can produce the Certificate of
-              MSME
-              Registration
-              while making application
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="headingFive">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Eligible for IPS subsidy
-              </button>
-            </h4>
-          </div>
-          <div id="collapseFive" class="collapse collapse-faq" aria-labelledby="headingFive"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              Enterprises that have MSME Registration are eligible for Industrial Promotion Subsidy (IPS) as mentioned
-              in
-              the scheme.
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="headingSix">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Subsidy on NSIC Performance and Credit ratings
-              </button>
-            </h4>
-          </div>
-          <div id="collapseSix" class="collapse collapse-faq" aria-labelledby="headingSix"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              Enterprises that have MSME Registration can avail Subsidy on NSIC Performance and Credit ratings as
-              mentioned in
-              the
-              scheme
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="headingSeven">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Bar Code registration subsidy
-              </button>
-            </h4>
-          </div>
-          <div id="collapseSeven" class="collapse collapse-faq" aria-labelledby="headingSeven"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              EnterEnterprises that have MSME Registration can avail Bar Code Registration subsidy as mentioned in the
-              schemeprises
-              that have MSME Registration can enjoy Direct Tax Exemption in the initial year of business, as mention
-              in
-              the
-              scheme by
-              Government and depending on business activity.
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="headingEight">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
-                data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                Exemption under Direct Tax Laws:
-              </button>
-            </h4>
-          </div>
-          <div id="collapseEight" class="collapse collapse-faq" aria-labelledby="headingEight"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              Enterprises that have MSME Registration can enjoy Direct Tax Exemption in the initial year of business,
-              as
-              mention in
-              the scheme by Government and depending on business activity
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
-    {{!--
+
+    {{!-- <!-- Process banner end --> --}}
+
+    {{!-- <!-- Benefits/FaQ's section --Start-- -->
+
+<!-- Benefits Section --Start-- --> --}}
+    <div class="wraper">
+      <div class="benefits-bucket">
+
+        <center>
+          <h4 class="space head">Here are the Benefits of Getting UDYOG AAdhar MSME Certificate</h4>
+        </center>
+        <div class="accordion" id="accordionExample">
+          <div class="coll">
+            <div class="card-header" id="headingOne">
+              <h4 class="mb-0">
+                <button class="btn btn-link left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Collateral Free loans from banks.
+                </button>
+              </h4>
+            </div>
+
+            <div id="collapseOne" class="collapse show collapse-faq" aria-labelledby="headingOne"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                The Credit Guarantee Fund Scheme for Micro and Small Enterprises (CGS) was launched by the Government of
+                India
+                to make
+                available collateral-free credit to the micro and small enterprise sector. Both the existing and the new
+                enterprises are
+                eligible to be covered under the scheme. The Ministry of Micro, Small and Medium Enterprises, Government
+                of
+                India and
+                Small Industries Development Bank of India (SIDBI), established a Trust named Credit Guarantee Fund
+                Trust
+                for
+                Micro and
+                Small Enterprises (CGTMSE) to implement the Credit Guarantee Fund Scheme for Micro and Small Enterprises
+              </div>
+            </div>
+          </div>
+          <div class="coll">
+            <div class="card-header" id="headingTwo">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Reduction in rate of Interest from banks
+                </button>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="collapse collapse-faq" aria-labelledby="headingTwo"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                The rate of Interest for enterprise that has MSME registration are lower as compare to other
+                enterprises.
+                Certain
+                targets are set for banks’ lending to the Micro and Small Enterprises. The banks’ have to achieve a 20%
+                growth
+                in credit
+                to micro and small enterprises and 10% annual growth in the number of micro enterprises accounts and 60%
+                of
+                total
+                lending to Micro and Small Enterprises sector. The banks have to follow the following:
+
+                1. 40% of the total advances must go to micro and small enterprises involved in manufacturing having
+                investment in plant
+                and machinery up to Rs.10 lakh and for service enterprises having investment in equipment up to Rs.4
+                lakh.
+
+                2. 20% of the total advance to micro and small enterprises should go to manufacturing enterprises that
+                have
+                above Rs.10
+                lakh till Rs.25 lakh investment in the plant and machinery and for service enterprises that have
+                investments
+                in
+                equipment above Rs.4
+                3. To simplify, 60% of the advances must go to micro enterprises.
+              </div>
+            </div>
+          </div>
+          <div class="coll">
+            <div class="card-header" id="headingThree">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Reservation policies to manufacturing / production sector:
+                </button>
+              </h4>
+            </div>
+            <div id="collapseThree" class="collapse collapse-faq" aria-labelledby="headingThree"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                Reservation of items for exclusive manufacture in SSI sector statutorily provided for in the Industries
+                (Development and
+                Regulation) Act, 1951, has been one of the important policy measures for promoting this sector.
+
+                The Reservation Policy has two objectives
+
+                Ensure increased production of consumer goods in the small scale sector
+                Expand employment opportunities through setting up of small scale industries
+              </div>
+            </div>
+          </div>
+
+
+          <div class="coll">
+            <div class="card-header" id="headingFour">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Very easy to get Licenses, approvals and registrations
+                </button>
+              </h4>
+            </div>
+            <div id="collapseFour" class="collapse collapse-faq" aria-labelledby="headingFour"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                It has made very easy for enterprises that are having MSME Certificate to obtain Licenses, approvals and
+                registrations
+                on any field for their business from the respective authorities as they can produce the Certificate of
+                MSME
+                Registration
+                while making application
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="headingFive">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Eligible for IPS subsidy
+                </button>
+              </h4>
+            </div>
+            <div id="collapseFive" class="collapse collapse-faq" aria-labelledby="headingFive"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                Enterprises that have MSME Registration are eligible for Industrial Promotion Subsidy (IPS) as mentioned
+                in
+                the scheme.
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="headingSix">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Subsidy on NSIC Performance and Credit ratings
+                </button>
+              </h4>
+            </div>
+            <div id="collapseSix" class="collapse collapse-faq" aria-labelledby="headingSix"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                Enterprises that have MSME Registration can avail Subsidy on NSIC Performance and Credit ratings as
+                mentioned in
+                the
+                scheme
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="headingSeven">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Bar Code registration subsidy
+                </button>
+              </h4>
+            </div>
+            <div id="collapseSeven" class="collapse collapse-faq" aria-labelledby="headingSeven"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                EnterEnterprises that have MSME Registration can avail Bar Code Registration subsidy as mentioned in the
+                schemeprises
+                that have MSME Registration can enjoy Direct Tax Exemption in the initial year of business, as mention
+                in
+                the
+                scheme by
+                Government and depending on business activity.
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="headingEight">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Exemption under Direct Tax Laws:
+                </button>
+              </h4>
+            </div>
+            <div id="collapseEight" class="collapse collapse-faq" aria-labelledby="headingEight"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                Enterprises that have MSME Registration can enjoy Direct Tax Exemption in the initial year of business,
+                as
+                mention in
+                the scheme by Government and depending on business activity
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {{!--
 <!-- Benefits Section --Ends-- -->
 
 
 <!-- FAQs Section --Start-- --> --}}
 
-    <div class="faq-benefits">
-      <center>
-        <h4 class="space head">Frequently Asked Questions</h4>
-      </center>
+      <div class="faq-benefits">
+        <center>
+          <h4 class="space head">Frequently Asked Questions</h4>
+        </center>
 
 
-      <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionExample">
 
-        <div class="coll">
-          <div class="card-header" id="heading1">
-            <h4 class="mb-0">
-              <button class="btn btn-link left" type="button" data-toggle="collapse" data-target="#collapse1"
-                aria-expanded="true" aria-controls="collapse1">
-                HOW MUCH TIME WILL IT TAKE TO GENERATE THE CERTIFICATE?
-              </button>
-            </h4>
+          <div class="coll">
+            <div class="card-header" id="heading1">
+              <h4 class="mb-0">
+                <button class="btn btn-link left" type="button" data-toggle="collapse" data-target="#collapse1"
+                  aria-expanded="true" aria-controls="collapse1">
+                  HOW MUCH TIME WILL IT TAKE TO GENERATE THE CERTIFICATE?
+                </button>
+              </h4>
+            </div>
+
+            <div id="collapse1" class="collapse show collapse-faq" aria-labelledby="heading1"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                GENERALLY IT TAKES {{time}} TO GENERATE THE CERTIFICATE.
+              </div>
+            </div>
           </div>
 
-          <div id="collapse1" class="collapse show collapse-faq" aria-labelledby="heading1"
-            data-parent="#accordionExample">
-            <div class="card-body">
-              GENERALLY IT TAKES {{time}} TO GENERATE THE CERTIFICATE.
+          <div class="coll">
+            <div class="card-header" id="heading2">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  HOW WILL I RECEIVE THE CERTIFICATE?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse2" class="collapse collapse-faq" aria-labelledby="heading2"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                IT WILL COME ON YOUR REGISTERED EMAIL ADDRESS?
+              </div>
+            </div>
+          </div>
+
+
+          <div class="coll">
+            <div class="card-header" id="heading3">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  FOR WHICH INDUSTRIES UDYOG AADHAAR / MSME CERTIFICATE CAN BE GENERATED?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse3" class="collapse collapse-faq" aria-labelledby="heading3"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                MSME / UA CAN BE GENERATED FOR EVERY BUSINESS UNDER MANUFACTURING / SERVICE SECTOR.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="coll">
+            <div class="card-header" id="heading4">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  CAN I SELECT MORE THAN 1 NIC CODE IN SINGLE MSME CERTIFICATE?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse4" class="collapse collapse-faq" aria-labelledby="heading4"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                YES
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="heading5">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  I DON’T HAVE ADDRESS PROOF FOR MY BUSINESS PREMISES, CAN I STILL GET MSME CERTIFICATE?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse5" class="collapse collapse-faq" aria-labelledby="heading5"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                YES, WE NEED ONLY ADDRESS OF THE PREMISES, WE DON’T NEED ADDRESS PROOF
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="heading6">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  HOW IS CERTIFICATE DELIVERED?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse6" class="collapse collapse-faq" aria-labelledby="heading6"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                GENERALLY IT IS DELIVERED ON CLIENTS REGISTRERED E-MAIL ADDRESS, BUT IN CASE YOU DON’T RECEIVE THE
+                CERTIFICATE, YOU CAN
+                CALL US & WE WILL PROVIDE IT TO YOU.
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="coll">
+            <div class="card-header" id="heading7">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  SPELLING OF MY NAME ON AADHAAR IS WRONG, WHAT DO I DO?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse7" class="collapse collapse-faq" aria-labelledby="heading7"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                YOU GET GET MSME CERTIFICATE GENERATED NOW. LATER ON WHEN MISTAKE IS CORRETED ON
+              </div>
+            </div>
+          </div>
+
+
+          <div class="coll">
+            <div class="card-header" id="heading8">
+              <h4 class="mb-0">
+                <button class="btn btn-link collapsed left" type="button" data-toggle="collapse"
+                  data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  I HAVE NOT YET STARTED THE BUSINESS, WHAT WILL BE THE DATE OF COMMENCEENT?
+                </button>
+              </h4>
+            </div>
+            <div id="collapse8" class="collapse collapse-faq" aria-labelledby="heading8"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                FUTURE DATES CAN NOT BE GIVEN, ONLY PAST DATES CAN BE GIVEN IN CERTIFICATE. NOTE : TODAY’S DATE IS ALSO
+                NOT ACCEPTED.
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="coll">
-          <div class="card-header" id="heading2">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse2"
-                aria-expanded="false" aria-controls="collapse2">
-                HOW WILL I RECEIVE THE CERTIFICATE?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse2" class="collapse collapse-faq" aria-labelledby="heading2" data-parent="#accordionExample">
-            <div class="card-body">
-              IT WILL COME ON YOUR REGISTERED EMAIL ADDRESS?
-            </div>
-          </div>
-        </div>
-
-
-        <div class="coll">
-          <div class="card-header" id="heading3">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse3"
-                aria-expanded="false" aria-controls="collapse3">
-                FOR WHICH INDUSTRIES UDYOG AADHAAR / MSME CERTIFICATE CAN BE GENERATED?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse3" class="collapse collapse-faq" aria-labelledby="heading3" data-parent="#accordionExample">
-            <div class="card-body">
-              MSME / UA CAN BE GENERATED FOR EVERY BUSINESS UNDER MANUFACTURING / SERVICE SECTOR.
-            </div>
-          </div>
-        </div>
-
-
-        <div class="coll">
-          <div class="card-header" id="heading4">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse4"
-                aria-expanded="false" aria-controls="collapse4">
-                CAN I SELECT MORE THAN 1 NIC CODE IN SINGLE MSME CERTIFICATE?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse4" class="collapse collapse-faq" aria-labelledby="heading4" data-parent="#accordionExample">
-            <div class="card-body">
-              YES
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="heading5">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse5"
-                aria-expanded="false" aria-controls="collapse5">
-                I DON’T HAVE ADDRESS PROOF FOR MY BUSINESS PREMISES, CAN I STILL GET MSME CERTIFICATE?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse5" class="collapse collapse-faq" aria-labelledby="heading5" data-parent="#accordionExample">
-            <div class="card-body">
-              YES, WE NEED ONLY ADDRESS OF THE PREMISES, WE DON’T NEED ADDRESS PROOF
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="heading6">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse6"
-                aria-expanded="false" aria-controls="collapse6">
-                HOW IS CERTIFICATE DELIVERED?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse6" class="collapse collapse-faq" aria-labelledby="heading6" data-parent="#accordionExample">
-            <div class="card-body">
-              GENERALLY IT IS DELIVERED ON CLIENTS REGISTRERED E-MAIL ADDRESS, BUT IN CASE YOU DON’T RECEIVE THE
-              CERTIFICATE, YOU CAN
-              CALL US & WE WILL PROVIDE IT TO YOU.
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="coll">
-          <div class="card-header" id="heading7">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse7"
-                aria-expanded="false" aria-controls="collapse7">
-                SPELLING OF MY NAME ON AADHAAR IS WRONG, WHAT DO I DO?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse7" class="collapse collapse-faq" aria-labelledby="heading7" data-parent="#accordionExample">
-            <div class="card-body">
-              YOU GET GET MSME CERTIFICATE GENERATED NOW. LATER ON WHEN MISTAKE IS CORRETED ON
-            </div>
-          </div>
-        </div>
-
-
-        <div class="coll">
-          <div class="card-header" id="heading8">
-            <h4 class="mb-0">
-              <button class="btn btn-link collapsed left" type="button" data-toggle="collapse" data-target="#collapse8"
-                aria-expanded="false" aria-controls="collapse8">
-                I HAVE NOT YET STARTED THE BUSINESS, WHAT WILL BE THE DATE OF COMMENCEENT?
-              </button>
-            </h4>
-          </div>
-          <div id="collapse8" class="collapse collapse-faq" aria-labelledby="heading8" data-parent="#accordionExample">
-            <div class="card-body">
-              FUTURE DATES CAN NOT BE GIVEN, ONLY PAST DATES CAN BE GIVEN IN CERTIFICATE. NOTE : TODAY’S DATE IS ALSO
-              NOT ACCEPTED.
-            </div>
-          </div>
-        </div>
       </div>
-
     </div>
-  </div>
-  {{!-- <!-- FAQs Section --Ends-- -->
+    {{!-- <!-- FAQs Section --Ends-- -->
 
 <!-- Benefits/FaQ's section --End-- --> --}}
