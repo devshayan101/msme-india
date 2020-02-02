@@ -180,7 +180,11 @@ a{
   margin-left: -2.5rem !important;
 }
 
-
+@media(max-width: 990px){
+  .btn-light{
+    margin-bottom: 4px;
+  }
+}
 
 @media (max-width: 767.98px) { 
 
